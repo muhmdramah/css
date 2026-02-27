@@ -1,0 +1,409 @@
+*{
+    font-family: sans-serif;
+}
+
+/* Background 
+    color
+        rgb(255 0 0) red
+        rgb(0 255 0) green 
+        rgb(0 0 255) blue
+
+        all zeros is black
+        all 255 is white
+
+        a is for alpha channel or opacity
+        rgb(255 255 255 / 50%) blue 
+
+        hexa decimal
+        #FF0000 red
+        #00FF00 green
+        #0000FF blue
+
+    image 
+        backround-image: url("imagepath")
+        backround-image: repeat => repeats the backround image horizontaly and vertically
+
+        repeat-x => repeat horizontaly
+        repeat-y => repeat vertically
+    */
+
+    /*
+    background-attachment
+        Scroll
+        default is scroll
+        the background stays above and did not go down with the content itself
+        background-attachment: scroll;
+
+        Fixed
+        if i wanna the background go down with the content should i use 'Fixed'
+        background-attachment: Fixed;
+
+    background-position 
+        the place of the backgroud in the page
+        i have 9 places like a table 
+        p1 p2 p3 
+        p4 p5 p6
+        p7 p8 p9
+
+        left top is    p1
+        left center is p4
+        left buttom is p7
+
+        and i can use all directions 
+        like center center => p5 p5 
+
+        also we can use pixles with background-position
+
+    size
+        i can backgeroud-size to make the image cover the body 
+        auto is default => image with it original size 
+        cover => covers the container with stretch or crop
+        contain => makes the image takes its full size 
+
+        also can use px or %
+
+    
+    Padding
+        the space between an element's content and its border
+        takes a percentage and pixels 
+
+     */
+
+    div{
+        /* background-color: red; /*color name*/
+        /* background-color: #fff00f; color hex code */
+        /* background-color: rgb(0 0 255 / 50%); */
+
+        /* background-image: url(../assets/Image-copyright.webp); */
+        /* background-repeat: no-repeat; */
+
+        /*default => go down and up when scroll */
+        /* background-attachment: scroll; */ 
+
+        /* no scroll */
+        /* background-attachment: fixed;*/ 
+
+        /* background-position */
+        /* background-position: center center; */
+        /* background-position: left bottom; */
+        /* background-position: left top; */
+
+        /* also we can use pixles with background-position*/
+
+        /* background-position: 100px 20px; */
+
+        /* also with percentage */
+        /* background-position: 50% 50%;  */
+
+
+        /* background-size */
+        /* default */
+        /* background-size: auto;  */
+
+        /* background-size: cover; */
+        /* background-size: contain; */
+
+        /* background-size: 850px 600px; */
+
+        /* covers the whole page */
+        /* background-size: 100% 100%; */
+
+
+        /* Padding */
+        /* top right buttom left */
+        /* padding: 10px 5px 0px 0px; */
+        
+        /* like => top 10px  left 20px  buttom 10px  right 20px */
+        /* padding: 10px; 
+        background-color: #DDD; */
+
+
+        /* margin */
+        /* like a padding in px and directions */
+        /* used to create space around elements, outside of any defined borders */
+        /* margin: 10px; */
+        /* margin: 10px 0px; */
+
+        /* margin can take a negative value, cause i move in the container  like -30px*/
+        
+        /* 
+        if i wanna center a div
+        and it's width is 70%
+
+        i can add margin-left: 15%;
+        this is because what is i have from 70 is 30
+        i need the left takes 15, and the right takes 15
+
+        so i can only type margin-left 15 or margin-right 15
+        or type both... it's up to you 
+        */
+
+        /* width: 70%; */
+        /* margin-left: 15%; */
+        /* margin-right: 15% */
+
+        /* instead of spicify a percentage in right of left i can use auto
+        and the brwoser can deside what to take */
+
+        /* width: 60%;
+        margin-left: auto;
+        margin-right: auto; */
+
+        /* or i can type margin auto directly */
+
+        /* width: 55%;
+        margin: auto;
+
+        text-align: center; */
+
+
+        /* Border
+            style of border
+            size of border
+            color of border
+
+         */
+
+        /* border-width: 10px;
+        border-color: red green;
+        border-style: solid; */
+
+        /* or usign shorthand property */
+        /* width: 300px;
+        border: solid red 10px;
+        border-radius: 5px; */
+
+
+        /* Outline
+            outline like a border but
+            the outline take it's size from outside the element
+            
+            if width is 300 and added boreder 10px
+                now the width is 320
+                10px for boreder right 
+                10px for boreder left 
+
+            but with outline whatever size of border i use
+                it will take it's size form the element it self
+                if i have a div 300px width 
+                and added 10px border
+                now the div still 300px, and the another 20px is for outline... out of the element
+         */
+
+        /* outline: solid green 10px; */
+
+
+        /* 
+            Display
+                block
+                    - takes full width if no with provided
+                    - adds a line break before and after 
+                    - respects padding, margin, width, height
+                
+                inline
+                    - did not add line break, all elements comes next to other 
+                    - did not repect width, height
+                    - respect padding and margin (only left and right) 
+                        this means if i added a block element after inline element, 
+                        the inline element will not respect the block element
+                        this is because inline elements respects only left and right
+                        if i wanna an inline element respects padding and margin top and buttom
+                        i can go write 
+                        display: block;
+                    - Allow elements before and after it
+
+                inline-block
+                    - Allow elements before and after it
+                    - respects padding, margin, width, height
+                    -
+            
+        
+
+        */
+
+        /* background-color: #DDD;
+        text-align: center;
+
+        width: 300px;
+        height: 30px;
+        padding: 10px;
+        margin: 10px; */
+
+        /* defualt for div*/
+        /* display: block;  */
+
+    }
+
+    span{
+        
+        background-color: #DDD;
+        text-align: center;
+
+        width: 300px;
+        height: 30px;
+        padding: 100px;
+        margin: 10px;
+
+        /*default for span*/
+        /*display: inline;*/ 
+
+        display: block;
+    }
+
+    .inline-block{
+        background-color: lightcoral;
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+
+        width: 300px;
+        height: 300px;
+    }
+
+
+
+    .visibility{
+        background-color: red;
+        margin: 10px 0px;
+
+        /* Display: none; */
+        /* the element is compeletly hidden, the element is hidden*/
+        /* usually we use it for pressing a button that displays an element and press again to hide */
+        /* pressing over a question to show the answer box, pressig again to hide it.... answer box is display: none; */
+        /* display: none; */
+
+
+        /* visibility
+            visible is default */
+
+        /* visibility: visible; */
+        /* hiddes the elements but keep it's space in the page */
+        visibility: hidden;
+    }
+
+
+    /* 
+        Grouping 
+        What if i have morethan selector that shares an elements?
+
+        all the following classes shares
+            background-color: #EEE;
+            padding: 10px;
+            margin: 10px 0px;
+
+        i can add all of those styles in a group selector that contains it 
+        .one, .two, .three, .four{
+        }
+    */
+
+    .one{
+        color: red;
+        border-bottom: red solid 2px;
+    }
+
+    .two{
+        color: green;
+        border-bottom: green solid 2px;
+    }
+
+    .three{
+        color: lightcoral;
+        border-bottom: lightcoral solid 2px;
+    }
+
+    
+    .four{
+        color: lightseagreen;
+        border-bottom: lightseagreen solid 2px;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four,
+    .my-p{
+        padding: 10px;
+        margin: 10px 0px;
+        background-color: #EEE;
+    }
+
+
+    /* 
+        Dimensions - Width And Height
+
+        width
+        in case if an element is 400px
+        if the 400px reached, text will go down and increase the height 
+
+        if i wanna the width 400px and there's a propability to increase
+        i can say
+        min-width : 400px (will not increase the height but will increase the width if nedded)
+
+
+        height
+        also all applyed for height 
+
+        min-height: 40px => starts form 40px but increase if nedded 
+        max-height: 60px => starts form 40px but increase if nedded untill reach 60px
+
+
+        --- 
+        width: fit-content;
+            the element will stay fits the content but if the content being larger, the element will also fit
+
+    */
+
+    .diemensions{
+        background-color: #EEE;
+        background-color: lightcoral;
+        padding: 10px;
+
+        display: inline-block;
+
+        min-width: 400px;
+        max-width: 400px;
+
+        min-height: 40px;
+        max-height: 60px;
+    }
+
+    hr{
+        visibility: hidden;
+    }
+
+
+    
+    /* 
+        Overflow
+        overflow property controls what happens when content is too large to fit within an element's box.
+
+        default is 
+            overflow: visible;
+
+        hidden
+            if i have a div and it's height and width is 400px
+            if i typed more than 400px 
+            the lines will be hidden and not appears
+
+        scroll
+            makes the lines apears but i can scroll over them 
+            
+        auto
+            if i used scroll and the lines did not reached the div size
+            the scene will ugly 
+            so i can use auto
+        
+        diemensions 
+            overflow-x
+            overflow-y
+    */
+
+    .overflow{
+        width: 250px;
+        height: 250px;
+        background-color: #EEE;
+        margin: 20px auto;
+        border-radius: 6px;
+
+        overflow: auto
+    }
