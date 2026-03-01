@@ -1,0 +1,46 @@
+/* .ext-decoration {
+    text-shadow: 1px 1px 0px red,
+        2px 2px 0px rgb(0, 76, 255),
+        2px 2px 0px rgb(0, 76, 255);
+} */
+
+.one {
+    text-transform: uppercase;
+}
+
+.two {
+    text-transform: capitalize;
+}
+
+.three {
+    text-transform: lowercase;
+}
+
+.ass-three {
+    width: 400px;
+    background-color: #EEE;
+
+    padding: 10px;
+
+    /* يمنع النزول لسطر جديد */
+    white-space: nowrap;
+
+    /* يخفي النص الزائد */
+    overflow: hidden;
+
+    /* يضيف ... في نهاية النص */
+    text-overflow: ellipsis;
+}
+
+.ass-four {
+    background-color: aqua;
+    text-align: center;
+    padding: 10px;
+
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #EEE;
+    max-height: 20px;
+    border-bottom: 2px solid #292626;
+}

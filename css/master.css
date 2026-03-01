@@ -407,3 +407,138 @@
 
         overflow: auto
     }
+
+    /* 
+    Text Color
+        - background color
+        - color
+
+    Text Shadow
+        0px 0px 0px #000,
+        vertical horizontal blur color
+*/
+
+/* div {
+    background-color: aliceblue;
+    padding: 10px;
+
+    text-shadow: 2px 1px 3px rgb(255 62 10 / 0.5);
+} */
+
+/* 
+    Text Align
+        - left
+        - right
+        - center
+    
+    Direction
+        - ltr (left to right)   
+        - rtl (right to left)
+
+    Vertical Align 'img tag'
+        - top
+        - middle
+        - bottom
+    this is used to align the text with the image, 
+        it is not used to align the text itself
+*/
+
+/* div {
+    background-color: aliceblue;
+
+    text-align: center;
+} */
+
+/* img {
+    vertical-align: middle;
+    vertical-align: top;
+} */
+
+
+/* 
+    Text Decoration
+        - line-through
+        - none => you can use it to remove the underline from a link
+        - underline
+        - overline
+
+    Text Transform
+        - uppercase => it will transform all the letters to uppercase
+        - lowercase => it will transform all the letters to lowercase
+        - capitalize => it will capitalize the first letter of each word
+*/
+a {
+    padding: 5px;
+    background-color: chocolate;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* 
+    Text Spacing
+    - letter-spacing => it is used to set the space between the letters 
+        negative value will decrease the space between the letters
+        positive value will increase the space between the letters
+
+    - word-spacing => it is used to set the space between the words
+        negative value will decrease the space between the words
+        positive value will increase the space between the words
+    
+    - text-indent => it is used to set the indentation of the first line of the text
+        positive value will indent the first line to the right
+        negative value will indent the first line to the left
+
+    - line-height => it is used to set the height of the line
+        it can be a number, a length, or a percentage
+        normal => it will set the line height to the default value (1.2)
+
+    - white-space => it is used to control how the white space is handled in the text
+        normal => it will collapse the white space and break the lines as needed
+        nowrap => it will collapse the white space and prevent the lines from breaking
+        pre => it will preserve the white space and the line breaks
+        pre-wrap => it will preserve the white space and break the lines as needed
+
+    - word-break => it is used to control how the words are broken when they overflow the container
+        normal => it will break the words at the normal break points
+        break-all => it will break the words at any point if they overflow the container
+        keep-all => it will prevent the words from breaking, even if they overflow the container
+*/
+
+
+/* 
+    text-overflow
+        it is used to control how the text is displayed when it overflows the container
+        ellipsis 
+            it will display three dots (...) at the end of the text when it overflows the container
+
+
+*/
+
+/* .text-overflow {
+    background-color: aliceblue;
+    width: 150px;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
+
+.inheritance {
+    background-color: #EEE;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+
+    border: 2px solid #000;
+}
+
+.inheritance .p-inheritance {
+    color: red;
+    font-size: 20px;
+
+    /* border will be inherited from the parent */
+    border: inherit;
+}
