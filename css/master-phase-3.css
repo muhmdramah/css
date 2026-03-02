@@ -1,0 +1,240 @@
+*{
+    font-family: 'Cairo', sans-serif;
+    margin: 0px;
+}
+
+/* 
+    Float 
+        makes the elements like a swimmer in tha page
+        left => floats from left to right
+        right => floats from right to left
+
+    Clear
+
+*/
+
+/* 
+    what if i wanna center a divs next each others
+
+    parent must take overflow hidden and padding 
+    chid must take flot 'left/right', and width like 25% if we have 4 elements
+
+    but overflow hidden bad if i have drop down
+
+    now i add a span after the elements of the container
+    and this span takes style clear:both
+
+*/
+
+
+.parent{
+    background-color: red;
+    padding: 10px;
+    /* overflow: hidden; */
+}
+
+.parent div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    text-align: center;
+    background-color: #EEE;
+
+    
+    width: 25%;
+    /* display: inline-block; */
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+
+/* --------------------------------------------------------------------------------------- */
+
+/* 
+    Calc
+
+    full width => 100%
+    1 space is 1% 
+    4 elements need 5 spaces = 5%   
+    available width 95%
+    95 / 4 elements => 23.75     
+
+
+
+    if i need spaces between only
+    spaces less the elements by 1
+
+    if i need spaces between and around 
+    spaces greater the elemenets by 1
+*/
+
+
+.calc-1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    text-align: center;
+    background-color: #EEE;
+
+    width: 23.75%;
+    margin-left: 1%;
+
+    float: left;
+
+
+    margin-bottom: 2px;
+}
+
+
+
+/* 
+    
+    full width => 100%
+    1 space is 1% 
+    5 elements need 6 spaces = 6%   
+    available width 94%
+    94 / 5 elements => 18.8
+*/
+
+
+.calc-2{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #EEE;
+
+    float: left;
+
+    width: 18.8%;
+    margin-left: 1%;
+
+    margin-bottom: 2px;
+}
+
+
+
+/* 
+    
+    full width => 100%
+    1 space is 1% 
+    7 elements need 8 spaces = 8%   
+    available width 92%
+    92 / 7 elements => 13.1428571429
+*/
+
+
+.calc-3{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    background-color: #EEE;
+
+    float: left;
+
+    width: 13.1428571429%;
+    margin-left: 1%;
+
+    margin-bottom: 2px;
+}
+
+
+
+/* 
+    This is so static, what if i wanna make space 2% not 1%  ?????
+
+    so, calc() takes the available width, and the number of the elements
+*/
+
+/* 
+    what if i have 10 elements
+    and spaces will be 2%
+
+    10 elements needs 11 spaces = 22%
+    available 88%
+*/
+
+.calc-4{
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    background-color: #EEE;
+    text-align: center;
+
+    float: left;
+
+    width: calc(78% /10);
+    margin-left: 2%;
+
+    margin-bottom: 2px;
+}
+
+
+
+
+/* 
+    what if i want the spaces is pixles not percentages 
+
+    i have 6 elements
+    need 7 spaces 
+    one space will be 16px
+    16px * 7 spaces = 112px
+
+    how to calculate??
+    (full width - full spaces) / elements number)
+    (( 100% - 112) / 6 )
+*/
+
+
+.calc-5{
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    background-color: #EEE;
+    text-align: center;
+
+    float: left;
+
+    width: calc((100% - 112px) / 6);
+    margin-left: 16px;
+
+    margin-bottom: 2px;
+}
+
+
+
+/* 
+
+    Opacity
+    opacity property sets the transparency level for an entire element and its contents, 
+    using a value from 0.0 to 1.0
+*/
+
+
+.opacity{
+    background-color: red;
+    border: 5px solid black;
+
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

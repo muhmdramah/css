@@ -1,0 +1,77 @@
+*{
+    font-family: 'Cairo', sans-serif;
+    margin: 0px;
+}
+
+.parent{
+    text-align: center;
+    background-color: #EEEEEE;
+    width: 800px;
+}
+
+    .full-width, .three, .two, .four{
+    background-color: #DDDDDD;
+    margin-left: 15px;
+    }
+
+.full-width{
+
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.three{
+    margin-top: 15px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    float: left;
+
+    width: calc((100% - 45px) / 3);
+}
+
+.two{
+    margin-top: 15px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    float: left;
+
+    width: calc((100% - 30px) / 2);
+}
+
+.four{
+    margin-top: 15px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    float: left;
+
+    width: calc((100% - 60px) / 4);
+}
+
+
+.clear{
+    clear: both;
+}
+
+.assign-two .normal, .one-1, .two-2{
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;    
+    background-color: #B3B3B3;
+    color: black;
+}
+
+.one-1{
+    background-color: rgb(179 179 179 / 25%);
+}
+
+.two-2{
+    opacity: 0.1;
+}
