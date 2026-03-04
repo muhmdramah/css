@@ -1,0 +1,153 @@
+
+
+
+/* 
+    Position 
+    with position i can move the element wherever i want in the page 
+
+    position : static; => default which is i cant move an element
+
+
+    position : relative;
+        if i said 
+            top: 30px => the element can move as i mentioned 
+                and also will appear over the element after it  
+
+
+    position : absolute;
+        the element i moved based on the page 
+        
+        ex. if i wanna the element in the bottom i can say 
+            position: absolute;
+            buttom: 0;
+
+        with absolute, the parent of the element is the body tag
+
+
+    
+    position: relative with parent  
+        if i have a div takes position absolute
+        and this div is inside a parent 
+        parent must be relative, so i can move a div inside this parent 
+
+
+
+    parent must take => relative
+    child  must take => absolute
+
+
+
+    position: fixed;
+        moves based on the page, whatever where it is 
+        also going down when i scroll
+        like scroll to up button
+
+
+    position: sticky;
+        if i have a div and it takes
+            position sticky, and top 0
+        now if i scroll.... this div will stop at top 0 even i scroll more 
+
+ */
+
+
+
+
+.parent {
+    background-color: #EEEEEE;
+    
+    width: 500px;
+    height: 300px;
+
+    position: relative;
+}
+
+.child-one {
+    background-color: #6c6c6c;
+    text-align: center;
+
+    width: 75px;
+    padding: 10px;
+
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+}
+
+
+.child-two{
+    background-color: #6c6c6c;
+    text-align: center;
+
+    width: 75px;
+    padding: 10px;
+
+    position: absolute;
+
+    top: 0px;
+    right: 0px;
+}
+
+.child-three{
+    background-color: #6c6c6c;
+    text-align: center;
+
+    width: 75px;
+    padding: 10px;
+
+    position: absolute;
+
+    bottom: 0px;
+    left: 0px;
+}
+
+.child-four{
+    background-color: #6c6c6c;
+    text-align: center;
+
+    width: 75px;
+    padding: 10px;
+
+    position: absolute;
+
+    bottom: 0px;
+    right: 0px;
+}
+
+
+.fixed
+{
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    border: 5px solid lightseagreen;
+    width: 50px;
+    text-align: center;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+
+body{
+    min-height: 200000px;
+}
+
+.text .sticky {
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+    color: black;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    border-radius: 10px;
+
+    position: sticky;
+    top: 0 ;
+}
