@@ -1,0 +1,40 @@
+.assign-one .green, .red, .blue, .black {
+
+    height: 100px;
+    width: 100px;
+
+    position: absolute;
+}
+
+
+.assign-one .green{
+    background-color: green;
+
+    z-index: 4;
+
+    left: 30px;
+    top: 30px;
+}
+
+.assign-one .red {
+    background-color: red;
+    z-index: 5;
+    left: 40px;
+    top: 40px;
+}
+
+.assign-one .blue{
+    background-color: blue;
+
+    z-index: 3;
+
+    left: 20px;
+    top: 20px;
+}
+
+.assign-one .black{
+    background-color: black;
+    z-index: 1;
+    left: 20px;
+    top: 30px;
+}

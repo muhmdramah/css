@@ -1,0 +1,60 @@
+.parent {
+    width: 400px;
+
+    /* center an element */
+    display: fixed;
+    margin: 0px auto;
+
+    background-color: #EEEEEE;
+}
+
+.parent .main-ul li {
+    list-style: none;
+}
+
+.parent .main-ul li ol .li-one, 
+.parent .main-ul li ol .li-two {
+
+    background-color: white;
+    padding: 10px;
+    list-style: outside;
+
+    /* margin-left: -30px */
+}
+
+.parent .main-ul li ol .li-one{
+    list-style-type: decimal;
+    margin: 5px;
+}
+
+.parent .main-ul li ol .li-two{
+    list-style: lower-roman;
+    margin: 5px;
+
+}
+
+.parent .main-ul .html{
+padding: 10px;
+}
+
+
+.parent .main-ul .css{
+padding: 10px;
+}
+
+.parent .main-ul .JavaScript{
+padding: 10px;
+}
+
+.parent .main-ul .JavaScript .nested-ul li{
+
+    background-color: white;
+    padding: 10px;
+    list-style: inside circle;
+    margin: 5px;
+}
+
+
+.parent .main-ul > li {
+    margin-bottom: 15px; /* space between HTML, CSS, JS */
+}
