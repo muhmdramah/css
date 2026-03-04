@@ -1,0 +1,24 @@
+ul{
+        list-style: tibetan;
+
+        background-color: #EEEEEE;
+        color: rgb(0, 0, 0);
+}
+
+/* 
+    list-style: inside;
+        takes the bullets inside the li
+
+    list-style-image: url()
+        changes the bullets into image 
+
+    shorthand
+
+    list-style: type position image
+
+*/
+
+ul{
+    list-style: armenian inside url("/assets/1.png");
+}
+
