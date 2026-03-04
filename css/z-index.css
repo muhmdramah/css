@@ -1,0 +1,67 @@
+
+
+
+/* 
+    Z-index
+
+    how can elements gets over each other?
+
+    div 1
+    div 2
+    div 3
+
+    default flow for index is 
+        3 top
+        2 between 
+        1 behind all of them 
+
+
+    if i gave z-index: 3; for for div 1.... will be shown over all div's  
+
+
+    NOTE!!!!!!!!!!1
+    z-index will not work without position
+*/
+
+
+
+.one{
+    background-color: red;
+
+    left: 20px;
+    top: 20px;
+
+    z-index: 3;
+}
+
+.two{
+    background-color: green;
+    left: 15px;
+    top: 15px;
+
+    z-index: 2;
+}
+
+.three{
+    background-color: blue; 
+
+    z-index: 1;
+}
+
+.one, .two, .three {
+    text-align: center;
+
+    padding: 25px;
+    width: 110px;
+    margin-left: 10px;
+
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    position: absolute;
+}
+
+.four{
+    visibility: hidden;
+}
