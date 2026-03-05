@@ -58,3 +58,66 @@ a:visited{
 .in-for-os:checked {
     display: none;
 }
+
+
+
+/* 
+    Pseudo Elements 
+        ::first-letter
+            takes an action over the first letter on a paragraph
+        
+        ::first-line
+            takes an action over the first line on a paragraph
+
+        ::selection
+            when it comes to select text 
+            like when you trying to select a text from a page, the selection by default is blue 
+            you can change this color into another color
+
+            you can apply it over any selection in tha page
+                ::selection{}
+
+            or over a spicified element
+                element::selection{}
+
+    NOTE!!!!!
+        in Pseudo Elements i have to declare with :: before the class
+*/
+
+
+.pseudo-elements .one span {
+    background-color: red;
+    color: white;
+
+    font-size: 60px;
+    font-weight: bold;
+    
+    display: inline-block;
+}
+
+.pseudo-elements .two::first-letter {
+    background-color: red;
+    color: white;
+
+    font-size: 60px;
+    font-weight: bold;
+    
+    display: inline-block;
+}
+
+.pseudo-elements .three::first-line {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.pseudo-elements .four::selection {
+    background-color: lightcoral;
+    color: black;
+}
+
+::selection{
+       background-color: lightgreen;
+    color: black; 
+}
