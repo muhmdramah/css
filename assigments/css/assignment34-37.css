@@ -1,0 +1,113 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.assignment-1 div{
+    background-color: #EEEEEE;
+    width: 300px;
+    height: 60px;
+    margin: 20px auto;
+
+    text-align: center;
+
+    /* this is how center a text with the height */
+    line-height: 4;
+}
+
+
+.assignment-1 div:empty{
+    background-color: red;
+}
+
+.assignment-2 div {
+    background-color: #EEEEEE;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.assignment-2 div::first-letter {
+    display: inline-block;
+
+    background-color: red;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+
+    margin: auto 20px auto -40px;
+}
+
+.assignment-3{
+    width: 400px;
+    margin: 20px auto;
+}
+
+
+.assignment-3 p{
+    background-color: #EEEEEE;
+    width: 400px;
+    padding: 15px;
+    border-left: 3px solid #e91e63;
+    position: relative;
+} 
+
+.assignment-3 p::before{
+    content: attr(data-person);
+    position: absolute;
+    background-color: #DDD;
+    text-align: center;
+    padding: 10px;
+    width: 60px;
+    left: -100px;
+    top: 50%;
+    margin-top: -19px;
+}
+
+.assignment-3 p::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 9px;
+    border-color: transparent red transparent transparent;
+    border-style: solid;
+    top: 50%;
+    margin-top: -10px;
+    left: -20px;
+}
+
+
+.assignment-4 p{
+    counter-increment: counter;
+    background-color: #DDD;
+    margin: 20px auto;
+    width: 400px;
+    padding: 20px;
+
+    position: relative;
+}
+
+.assignment-4 p::after{
+    content: "";
+    background-color: red;
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    right: -5px;
+    margin-top: -20px;
+}
+
+.assignment-4 p::before{
+    content: counter(counter);
+    background-color: red;
+    position: absolute;
+    width: 50px;
+    height: 58px;
+    line-height: 3;
+    text-align: center;
+    color: white;
+    left: -50px;
+    top: 50%;
+    margin-top: -29px;
+}
