@@ -230,3 +230,113 @@ position: absolute;
 
 
 
+/* 
+    counter-increment
+
+    What if i wanna add a counter before or after the element
+    even i have a 500 element this counter will count it
+
+    parent must take a property called 
+        counter-increment: a-name-you-gave;
+
+    then 
+
+    on each element you need to show a counter using an ::after or ::before
+        you type
+        content: counter(name of your counter)
+
+    you can style the element that holds your counter
+
+    remember to make that child absolute
+*/
+
+.parent-counter{
+    margin-bottom: 20px ;
+    overflow: hidden;
+
+    counter-increment: users-counter;
+}
+
+.one-p-counter {    
+    background-color: #EEE;
+    float: left;
+    padding: 20px;
+    width: 600px;
+    position: relative;
+}
+
+.user-counter{
+    float: left;
+    margin-right: 20px;
+    background-color: #EEE;
+    width: 65px;
+    height: 76.5px;
+    text-align: center;
+    padding: 10px;
+    font-size: 50px
+}
+.one-p-counter::after{
+content: counter(users-counter);
+    background-color: #a0a0a0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    top: 50%;
+    margin-top: -20px;
+    position: absolute;
+    right: -50px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/*
+
+    content property can takes any attribute 
+
+    so
+    if the html element have an attribute called some-attribute="a value from attribute"
+    i can take this attribute and gave it to cantent property 
+
+    content: attr(some-attribute);
+
+    the text inside some-attribute will appear before or after the element, based on your decision
+ */
+
+
+.parent-attr{
+    margin-bottom: 20px ;
+    overflow: hidden;
+
+    counter-increment: users-counter;
+}
+
+.one-p-attr {    
+    background-color: #EEE;
+    float: left;
+    padding: 20px;
+    width: 600px;
+    position: relative;
+}
+
+.user-attr{
+    float: left;
+    margin-right: 20px;
+    background-color: #EEE;
+    width: 65px;
+    height: 76.5px;
+    text-align: center;
+    padding: 10px;
+    font-size: 50px
+}
+
+
+.one-p-attr::before {
+    content: attr(some-attribute);
+    background-color: mediumvioletred;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
