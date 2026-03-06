@@ -1,6 +1,5 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #EEEEEE;
 }
 
 
@@ -121,3 +120,113 @@ a:visited{
        background-color: lightgreen;
     color: black; 
 }
+
+
+/* 
+    Pseudo Elements 
+        ::before
+            adds an element before you element
+            
+        ::after
+            adds an element after you element
+
+        ::content : "";
+            must be declared to make you pseudo element visible
+*/
+
+.parent{
+    margin-bottom: 20px ;
+    overflow: hidden;
+}
+
+.one-p {
+    background-color: #EEE;
+    float: left;
+    padding: 20px;
+    width: 600px;
+    position: relative;
+}
+
+.user{
+    float: left;
+    margin-right: 20px;
+    background-color: #EEE;
+    width: 65px;
+    height: 76.5px;
+    text-align: center;
+    padding: 10px;
+    font-size: 50px
+}
+
+/* 
+    before and after is an psuedo elements that i gave to the parent
+        so, they must be absoulte.. the parent must be relative
+
+    what if you wanna add a line after or after you element
+    |element|
+    this requires an empty span 
+        this span w'll be absolute
+*/
+
+/* you can do this with this empty span that is called pipeline like that */
+
+
+/* .one-p .pipeline {
+position: absolute;
+    background-color: #2697af;
+    height: 100%;
+    width: 10px;
+    right: -20px;
+    top: 0;
+} */
+
+
+/* 
+    But i can make this with only ::afrer pseudo class.. even no need for span
+*/
+
+.one-p::after {
+    content: "";
+    position: absolute;
+    background-color: #2697af;
+    height: 100%;
+    width: 10px;
+    right: -20px;
+    top: 0;
+}
+
+
+
+/* 
+    what about make an arrow that points to a thing before the element?
+*/
+
+.one-p::before {
+    content: "";
+    
+    width: 0;
+    height: 0;
+    background-color: white;
+    position: absolute;
+    left: -20px;
+
+        /* 
+        how to center an element vertically
+        top: 50%
+        margin-top: minus the height / 2 
+    */
+    top: 50%;
+    margin-top: -10px;
+
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent #2697af transparent transparent;
+
+    /* 
+        default of color is transparent
+    */
+}
+
+
+
+
