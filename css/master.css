@@ -623,3 +623,129 @@ div .test{
 
 */
 
+/* __________________________________________________ */
+
+
+
+/* Boreder Radius  */
+
+.boreder-radius{
+    width: 80px;
+    height: 80px;
+    background-color: lightcoral;
+    margin: 20px auto;
+
+    /* border-radius: 20px; */
+    border-top-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+    border: 1px solid red;
+    
+    /* Vendor prefixes */
+    /* -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px; */
+
+
+    /* border takes 2 values
+    because the one side border has 2 sides 'you can seacrh' */
+}
+
+
+/* Box Shadow */
+
+.box-shadow {
+
+    /* 
+        text-shadow makes a shadow for the text 
+
+        but box-shadow makes a shadow for the boxes or the elements 
+    */
+
+    /* 
+        what it takes?
+
+        horizontal shadow | h-shadow
+        vertical shadow   | v-shadow
+        blure 
+        spread
+        color
+        inset => the shadow will be inside or outside the box 
+
+    */
+
+    padding: 20px;
+    background-color: #EEE;
+    margin: 20px auto;
+    width: 300px;
+
+    /* h-shadow | v-shadow | blure | spread | color */
+    box-shadow: 0px 0px 9px 4px lightslategray;
+
+
+    /* with inset prop, the shadow will be inside the box */
+    box-shadow: 0px 0px 9px 4px lightslategray inset;
+}
+
+
+
+/* Box Sizing 
+
+    default
+    box-sizing:content-box;
+        just width and height for the element, any px's will be 
+            over that calculation
+
+    now, if i have parent 600px
+    and 2 parents with 300px width
+    and boreder 10px, and padding 10px
+
+    i can't use float left for make the elements stands beside each others
+
+    this is because the full size of child is 340 and the other one is 340
+    and parent full width is 600px 
+
+    box-sizing: border-box;
+    for make the behave correclty 
+    i have to use box-sizing: border-box;
+
+    box-sizing: border-box;
+        makes the width of the elements include padding and marging and border
+
+    
+*/
+.parent-box-sizing{
+    width: 600px;
+    overflow:hidden;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #DDD;
+}
+
+
+.parent-box-sizing .one-box-sizing {
+    background-color: #EEE;
+    width: 300px;
+    float: left;
+    border: 10px solid lightblue;
+    padding: 10px;
+
+    /* default */
+    /* box-sizing: content-box; */
+
+    box-sizing: border-box;
+}
+
+/* 
+
+    but it's not okay to add box-sizing:border-box; 
+    for each element, instead i can add it in a global selector
+
+*/
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
