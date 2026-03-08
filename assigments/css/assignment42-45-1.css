@@ -1,0 +1,44 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.parent {
+    background-color: #EEE;
+
+    width: 400px;
+    height: 200px;
+
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.parent:hover{
+    margin: 20px
+}
+
+.parent .trans-one {
+    text-align: center;
+    padding: 20px;
+}
+
+.parent .trans-two {
+    background-color: #ddd;
+    margin: 0px 20px 20px 20px;
+    text-align: center;
+    padding: 20px;
+    transition: all 1s 0.5s;
+    -webkit-transition: all 1s 0.5s;
+    -moz-transition: all 1s 0.5s;
+    -ms-transition: all 1s 0.5s;
+    -o-transition: all 1s 0.5s;
+}
+
+.parent .trans-two:hover{
+
+    margin-top: 25px;
+}

@@ -1,0 +1,139 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+}
+
+/* 
+    Transition
+        - Duration 
+            transition-duration: second; 
+                the time of duration with s or ms 
+        - Property 
+            transition-property: properties;
+                you can be specific about the properties you wanna apply the transition on
+                default is 'all'
+        - Delay 
+            transition-delay: 0.3s;
+                you can be specific about the time that is the element will take before the animation
+        - Timing Function
+            related to how you control the curve of the speed
+            ease => default
+                start slow, then fast, end slow 
+            ease-in
+                speed slow, fast btween and end 
+            ease-out 
+                speed same, but end is slow
+            ease-in-out
+                start slow and end slow... no fast
+            linear
+                same speed in the three steps
+
+
+        Shorthand property
+        properties or all | duration | Delay | timing function
+
+
+    NOTE!!!!!
+        transition code will be the element it self
+        but the behavior will be in the pseudo function
+*/
+
+.one{
+    background-color: #DDD;
+    width: 200px;
+    height: 100px;
+    /*transition-duration: 1s;
+    transition-delay: 0.3s;
+    transition-property: margin-left, width, height;
+    transition-property: All;
+    transition-timing-function:linear;
+    *//*morethanoneproperty*//*transition: width 1s, margin-left 1s, height 0.5s;
+    *//*transition: all 0.5s linear ;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+    *//*propertiesorall|duration|Delay|timingfunction*/transition:all 0.5s 0.2s linear ;
+}
+
+
+/* the action that will be happen smoothly when i hover  */
+.one:hover{
+    margin-left: 20px;
+    width: 250px;
+    height: 150px;
+}
+
+
+/* ______________________________________________________ */
+
+
+/* 
+    important declaration
+
+    if you marks any property with !important flag
+
+    the property will override any property in the file and any external file 
+    even any inline styles
+*/
+
+
+/* _________________________________________________________*/
+
+/* 
+    margin-collapsing
+
+    only vertical margin collapse
+    bigger margin overrides the small margin 
+    will no margin collapsing when there's an element between 
+
+*/
+
+.parent-margin-collapsing{
+    overflow: hidden;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    background-color: #EEE;
+}
+
+.parent-margin-collapsing
+    .one-margin-collapsing, 
+    .two-margin-collapsing
+{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.one-margin-collapsing
+{
+    background-color: #DDD;
+}
+.two-margin-collapsing{
+    background-color: #aaa;
+}
+
+
+.up-margin-collapsing{
+    background-color: red;
+    color: white;
+    height: 70px;
+
+    margin-bottom: 40px;
+}
+
+.down-margin-collapsing{
+    background-color: green;
+    color: white;
+    height: 70px;
+}
+
+

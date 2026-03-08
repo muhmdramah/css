@@ -1,0 +1,70 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* 
+    Variables 
+    global variable
+        we make it in the root file
+        :root{--variableName: value;}
+
+        how to use a variable?
+        var(--variableName, FallBack Value)
+
+        FallBack value means... if the main value did not work
+        the FallBcak Value will work
+*/
+:root{
+    --mainColor: rgb(78, 166, 78);
+    --mainPadding: 20px;
+    --mainBorderRadius: 5px;
+}
+
+
+.main{
+    background-color: var(--mainColor);
+    color: white;
+    padding: var(--mainPadding)
+}
+
+h2{
+    background-color: #EEE;
+    color: var(--mainColor);
+    padding: var(--mainPadding);
+}
+
+p{
+    background-color: #EEE;
+
+    color: var(--mainColor);
+    padding: var(--mainPadding);
+    border: 3px solid var(--mainColor);
+}
+
+a{
+    color: var(--mainColor);
+    font-weight: bold;
+    border: 1px solid var(--mainColor);
+    padding: calc(var(--mainPadding) - 15px);
+    border-radius: 5px;
+    text-decoration: none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+a:hover{
+    background-color: var(--mainColor);
+    color: white;
+    padding: calc(var(--mainPadding) - 15px);
+    text-decoration: none;
+    
+    border-radius: var(--mainBorderRadius);
+    -webkit-border-radius: var(--mainBorderRadius);
+    -moz-border-radius: var(--mainBorderRadius);
+    -ms-border-radius: var(--mainBorderRadius);
+    -o-border-radius: var(--mainBorderRadius);
+}

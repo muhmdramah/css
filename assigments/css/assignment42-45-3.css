@@ -1,0 +1,11 @@
+:root {
+  --mainColor: #009688;
+  --mainPadding: 10px;
+}
+
+.assignment-three div {
+    color: var(--mainColor, red);
+    padding: var(--mainPadding, 10px);
+    border: 2px solid var(--mainColor, black);
+    margin-top: 10px;
+}
